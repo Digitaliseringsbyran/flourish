@@ -1,0 +1,112 @@
+.header {
+	padding-top:$space-4;
+	padding-bottom:$space-4;
+}
+
+
+.container {
+	max-width:1240px;
+}
+
+
+.landing {
+	&__intro {
+		font-size:1.1rem;
+		color:palette(black, light);
+	}
+}
+
+
+.card {
+	padding:$space-4;
+	background: $white;
+	border-radius: $border-radius;
+	transition:background 0.25s;
+	border: 1px solid $white;
+	&:hover {
+		cursor:pointer;
+		background:palette(grey, xx-light);
+		border: 1px solid palette(grey, x-light);
+		box-shadow: 0 1px 9px 2px rgba(0,0,0,0.02);
+	}
+}
+
+
+
+.feature-video {
+	width:100%;
+	height:600px;
+	border-radius:$border-radius;
+	background:palette(grey, x-light);
+}
+
+
+.feature {
+	&__icon {
+		margin-right:$space-2;
+		height:26px;
+		width:26px;
+		background:palette(grey, x-light);
+		display:inline-block;
+		vertical-align:text-bottom;
+		border-radius:100%;
+	}
+}
+
+
+.navigation {
+	float:right;
+	&__link {
+		margin-left:$space-3;
+		font-size:0.9rem;
+	}
+}
+
+
+.goal-section {
+	background: palette(grey, xx-light);
+}
+
+
+.goal {
+	&__li {
+		font-size:1.2rem;
+	}
+	&__icon {
+		height:22.5px;
+		width:22.5px;
+		display:inline-block;
+		vertical-align:middle;
+		margin-right:$space-2;
+		background-color:$red;
+		border-radius:50%;
+	}
+
+	&__img {
+		height:500px;
+		width:100%;
+		display:block;
+		border-radius:$border-radius;
+		background:palette(grey, x-light);
+	}
+}
+
+
+.signup-button {
+	font-size:1rem;
+	font-weight:500;
+	&:focus {
+		outline:none;
+		text-decoration:underline;
+	}
+
+	&__icon {
+		height:20px;
+		display:inline-block;
+		vertical-align:middle;
+		width:20px;
+		margin-left:$space-1;
+		border-radius:100%;
+		background:$red;
+	}
+}
