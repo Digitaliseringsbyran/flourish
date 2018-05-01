@@ -11,7 +11,7 @@
 
 .landing {
 	&__intro {
-		font-size:1.1rem;
+		font-size:1.125rem;
 		color:palette(black, light);
 	}
 }
@@ -35,9 +35,11 @@
 
 .feature-video {
 	width:100%;
-	height:600px;
+	height:550px;
 	border-radius:$border-radius;
-	background:palette(grey, x-light);
+	background:palette(grey, xx-light);
+	border: 1px solid palette(grey, x-light);
+	box-shadow: 0 1px 9px 2px rgba(0,0,0,0.02);
 }
 
 
@@ -64,21 +66,27 @@
 
 
 .goal-section {
-	background: palette(grey, xx-light);
+	background: #F2F4F9;
 }
 
 
 .goal {
+	&__description {
+		font-size:1.125rem;
+		width:80%;
+		color:palette(black, xx-light);
+	}
 	&__li {
-		font-size:1.2rem;
+		font-size:1.1rem;
+		font-weight:500;
 	}
 	&__icon {
 		height:22.5px;
 		width:22.5px;
 		display:inline-block;
 		vertical-align:middle;
-		margin-right:$space-2;
-		background-color:$red;
+		margin-right:$space-3;
+		background-color:$yellow;
 		border-radius:50%;
 	}
 
@@ -87,7 +95,41 @@
 		width:100%;
 		display:block;
 		border-radius:$border-radius;
-		background:palette(grey, x-light);
+		background:palette(grey, xx-light);
+		border: 1px solid palette(grey, x-light);
+		box-shadow: 0 1px 9px 2px rgba(0,0,0,0.02);
+	}
+}
+
+
+
+.pricing {
+	&__price {
+		font-size:1rem;
+		font-weight:500;
+		color:palette(black, x-light);
+	}
+
+	&__description {
+		color:palette(black, xx-light);
+	}
+}
+
+
+.pricing-table {
+	border-radius:$border-radius;
+	border: 1px solid palette(grey, x-light);
+	overflow:hidden;
+	border-collapse: inherit;
+
+	&__data {
+		border-bottom: 1px solid palette(grey, x-light);
+	}
+
+	&__button {
+		padding:1.375rem $space-3;
+		background:#F2F4F9;
+		font-weight:500;
 	}
 }
 

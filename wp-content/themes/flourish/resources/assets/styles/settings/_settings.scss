@@ -8,9 +8,9 @@ $space-6: 8rem;
 
 // Type-scale
 $h1: 3.425rem;
-$h2: 2.675rem;
-$h3: 1.2rem;
-$h4: 1.25rem;
+$h2: 2.475rem;
+$h3: 1.725rem;
+$h4: 1.2rem;
 $h5: .875rem;
 $h6: .75rem;
 
@@ -52,7 +52,7 @@ $palettes: (
 	),
 
 	black: (
-		xx-light  : lighten($black, 10%),
+		xx-light  : lighten($black, 20%),
 		x-light  : lighten($black, 5%),
 		light    : lighten($black, 1%),
 		base     : $black,
